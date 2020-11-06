@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Projects Part 2</title>
+  </head>
+  <body>
+    <h1>Simple Projects Part 2</h1>
+
+    <div class="container">
+      <div id="opData">
+        <fieldset>
+          <legend><strong>Operating Data</strong></legend>
+          <p>Enter numbers one by one to create an array</p>
+          <label for="inputArray">Enter here:</label>
+          <input type="number" name="inputArrar" id="inputArray" />
+          <button onclick="pushToArray();">Push</button>
+          <br />
+          <br />
+          <label for="inputK">Enter "k":</label>
+          <input type="number" name="inputK" id="inputK" />
+          <button onclick="pushkAttribute();">Push</button>
+          <p>Current "k" attribute:</p>
+          <p id="kAttribute"></p>
+          <p>Curent array:</p>
+          <p id="arrayAttribute"></p>
+          <button onclick="clearArray()">Clear Array</button>
+          <button onclick="randomArray()">Get Random Array</button>
+          <button onclick="startOperations();">START</button>
+        </fieldset>
+      </div>
+
+      <div id="result">
+        <fieldset>
+          <legend><strong> Results</strong></legend>
+          <div id="ex1">
+            <p>1. Is there any two numbers from list add to k ?</p>
+            <p id="upToK"><strong>Null</strong></p>
+          </div>
+
+          <div id="ex2">
+            <p>2. The longest subarray where all its elements are distinct:</p>
+            <p id="dist"><strong>Null</strong></p>
+          </div>
+
+          <div id="ex3">
+            <p>3. Greatest common denominator is:</p>
+            <p id="denom"><strong>Null</strong></p>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <script src="code.js"></script>
+  </body>
+</html>

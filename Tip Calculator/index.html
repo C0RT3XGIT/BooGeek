@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tips Calculator</title>
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <div class="container">
+      <fieldset>
+        <legend>Operatig Data</legend>
+        <br />
+        <label for="bill">Bill amount:</label>
+        <input type="number" id="bill" />
+        <br />
+        <br />
+        <label for="guests">Number of guests:</label>
+        <input type="number" id="guests" />
+        <p>Service level:</p>
+        <input type="radio" id="out" name="selector" />
+        <label for="out">Outstanding</label>
+        <input type="radio" id="good" name="selector" checked="checked" />
+        <label for="good">Good</label>
+        <input type="radio" id="ok" name="selector" />
+        <label for="ok">OKish</label>
+        <input type="radio" id="bad" name="selector" />
+        <label for="bad">Bad</label>
+        <input type="radio" id="never" name="selector" />
+        <label for="never">Never coming back</label>
+        <br />
+        <br />
+        <input
+          type="button"
+          value="Submit"
+          id="submitData"
+          onclick="startFunc()"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Results</legend>
+        <p>Current bill:</p>
+        <p id="billLabel">0</p>
+        <p>Number of guests:</p>
+        <p id="guestsLabel">0</p>
+        <p>Tip value for each guest:</p>
+        <p id="toPay">0</p>
+      </fieldset>
+    </div>
+  </body>
+  <script src="code.js"></script>
+</html>
