@@ -1,9 +1,9 @@
-import React from "react";
+import React from "../../node_modules/react";
 import ButtonContainer from "./ButtonContainer";
 
 function ValueView({
   inputValue,
-  setInputvalue,
+  setInputValue,
   valueInMemory,
   setValueInMemomry,
 }) {

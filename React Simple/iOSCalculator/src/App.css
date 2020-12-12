@@ -80,3 +80,7 @@ body {
 .button:focus {
   filter: brightness(120%);
 }
+
+.lowerText {
+  text-align: initial;
+}

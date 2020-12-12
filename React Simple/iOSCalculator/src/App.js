@@ -1,17 +1,18 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "../node_modules/react";
 
 //Import components
 import ValueView from "./components/ValueView";
 import ButtonContainer from "./components/ButtonContainer";
 
 function App() {
-  const [inputValue, setInputvalue] = useState("");
+  const [inputValue, setInputValue] = useState("");
   const [valueInMemory, setValueInMemomry] = useState("");
   const [operator, setOperator] = useState("");
+  const [isPressed, setIsPressed] = useState("");
 
   useEffect(() => {
-    setInputvalue("0");
+    setInputValue("0");
   }, []);
 
   return (
@@ -19,16 +20,19 @@ function App() {
       <header className="App-header"></header>
       <div className="calculator">
         <div className="top-container"></div>
-        <ValueView inputValue={inputValue} setInputvalue={setInputvalue} />
+        <ValueView inputValue={inputValue} setInputValue={setInputValue} />
         <ButtonContainer
           inputValue={inputValue}
-          setInputvalue={setInputvalue}
+          setInputValue={setInputValue}
           valueInMemory={valueInMemory}
           setValueInMemomry={setValueInMemomry}
           operator={operator}
           setOperator={setOperator}
+          isPressed={isPressed}
+          setIsPressed={setIsPressed}
         />
       </div>
+      <h3 className="lowerText">It's not the best solution, but it works =)</h3>
       <script src="app.js"></script>
     </div>
   );
